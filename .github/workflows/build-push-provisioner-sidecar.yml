@@ -29,3 +29,7 @@ jobs:
         echo "IMAGE_TAGS=canary" >> Makefile
         make clean
         make push
+        docker tag sample-driver:latest quay.io/containerobjectstorage/objectstorage-sidecar:canary
+        docker push quay.io/containerobjectstorage/objectstorage-sidecar:canary
+
+
