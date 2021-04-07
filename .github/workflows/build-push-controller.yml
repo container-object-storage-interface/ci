@@ -27,6 +27,5 @@ jobs:
       run: |
         echo "IMAGE_NAME=quay.io/containerobjectstorage/objectstorage-controller" >> Makefile
         echo "IMAGE_TAGS=canary" >> Makefile
-        make clean
-        make push
+        make clean && make test && make push
         
