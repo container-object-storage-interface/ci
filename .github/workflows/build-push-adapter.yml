@@ -25,6 +25,5 @@ jobs:
 
     - name: Build and push the container image
       run: |
-        make clean
-        make push
+        make clean && make test && make push
         
