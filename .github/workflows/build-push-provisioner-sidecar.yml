@@ -1,4 +1,4 @@
-name: build cosi provisioner and sidecar container images
+name: build cosi sidecar container image
 
 on:
   workflow_dispatch:
